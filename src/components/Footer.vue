@@ -34,7 +34,7 @@ export default {
     /* width: 212px; */
     /* height: 48px; */
 
-    font-family: 'Google Sans';
+    font-family: 'Google-Sans';
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
@@ -62,7 +62,7 @@ export default {
     width: 575px;
     height: 34px;
 
-    font-family: 'Google Sans';
+    font-family: 'Google-Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 28px;

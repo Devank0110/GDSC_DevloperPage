@@ -7,7 +7,8 @@
 
         <v-row class="d-flex justify-space-around">
           <v-col class="mb-15" lg="3" v-for="dev in data[0]" :key="dev.no">
-            <Card :imgName="dev.img" :name="dev.name" :post="dev.post" :linkedinurl="dev.linkedin" :githuburl="dev.github" />
+            <Card :imgName="dev.img" :name="dev.name" :post="dev.post" :linkedinurl="dev.linkedin"
+              :githuburl="dev.github" />
           </v-col>
         </v-row>
 
@@ -15,7 +16,8 @@
 
         <v-row class="d-flex justify-space-around">
           <v-col class="mb-6" lg="3" v-for="dev in data[1]" :key="dev.no">
-            <Card :imgName="dev.img" :name="dev.name" :post="dev.post" :linkedinurl="dev.linkedin" :githuburl="dev.github" />
+            <Card :imgName="dev.img" :name="dev.name" :post="dev.post" :linkedinurl="dev.linkedin"
+              :githuburl="dev.github" />
           </v-col>
         </v-row>
 
@@ -23,7 +25,8 @@
 
         <v-row class="d-flex justify-space-around">
           <v-col class="mb-6" lg="3" v-for="dev in data[2]" :key="dev.no">
-            <Card :imgName="dev.img" :name="dev.name" :post="dev.post" :linkedinurl="dev.linkedin" :githuburl="dev.github" />
+            <Card :imgName="dev.img" :name="dev.name" :post="dev.post" :linkedinurl="dev.linkedin"
+              :githuburl="dev.github" />
           </v-col>
         </v-row>
 
@@ -59,6 +62,21 @@ export default {
 </script>
 
 <style>
+/* adding fonts */
+@font-face {
+  font-family: "Google-Sans";
+  src: local("Google-Sans"),
+    url(./fonts/Google-Sans/GoogleSans-Regular-v1.27.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* body{
+  font-family: "Google-Sans" !important;
+} */
+
+
+
 .bg-color {
   background-color: #171717;
 }
@@ -67,7 +85,7 @@ export default {
   padding: 96px;
   text-align: center;
 
-  font-family: "Google Sans";
+  font-family: "Google-Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 48px;

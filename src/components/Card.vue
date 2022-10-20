@@ -1,5 +1,5 @@
 <template>
-    <v-card :class="`d-flex justify-space-around`" :cols="3" color="#171717" flat tile>
+    <v-card class="d-flex justify-space-around" color="#171717" flat tile>
         <v-card class="mx-auto" max-width="230" color="#171717">
             <v-img :src="require(`@/assets/images/${imgName}`)" class="dev-img"></v-img>
 
@@ -7,7 +7,7 @@
                 {{name}}
             </v-card-title>
 
-            <v-card-subtitle class="dev-post mx-auto py-2">
+            <v-card-subtitle class="dev-post mx-auto py-2 px-0">
                 {{post}}
             </v-card-subtitle>
 
@@ -85,7 +85,7 @@ export default {
     width: 240px;
     /* height: 34px; */
 
-    font-family: "Google Sans";
+    font-family: "Google-Sans";
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
@@ -107,7 +107,7 @@ export default {
     width: 240px;
     /* height: 28px; */
 
-    font-family: "Google Sans";
+    font-family: "Google-Sans";
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
