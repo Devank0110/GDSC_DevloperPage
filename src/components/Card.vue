@@ -1,17 +1,17 @@
 <template>
     <v-card class="d-flex justify-space-around" color="#171717" flat tile>
-        <v-card class="mx-auto" max-width="230" color="#171717">
-            <v-img :src="require(`@/assets/images/${imgName}`)" class="dev-img"></v-img>
+        <v-card class="mx-auto" color="#171717">
+            <v-img :src="require(`@/assets/images/${imgName}`)" class="dev-img mx-auto"></v-img>
 
-            <v-card-title class="dev-name mx-auto py-5 justify-center">
-                {{name}}
+            <v-card-title class="dev-name mx-auto my-5 justify-center">
+                {{ name }}
             </v-card-title>
 
-            <v-card-subtitle class="dev-post mx-auto py-2 px-0">
-                {{post}}
+            <v-card-subtitle class="dev-post mx-auto my-1 px-0">
+                {{ post }}
             </v-card-subtitle>
 
-            <div class="py-4 d-flex justify-center">
+            <div class="py-1 d-flex justify-center">
                 <div class="px-1">
                     <a :href="linkedinurl">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="socials">
@@ -82,8 +82,8 @@ export default {
 }
 
 .dev-name {
-    width: 240px;
-    /* height: 34px; */
+    /* width: 240px; */
+    height: 34px;
 
     font-family: "Google-Sans";
     font-style: normal;
@@ -104,8 +104,8 @@ export default {
 }
 
 .dev-post {
-    width: 240px;
-    /* height: 28px; */
+    /* width: 240px; */
+    height: 28px;
 
     font-family: "Google-Sans";
     font-style: normal;
@@ -148,5 +148,26 @@ export default {
 
 path#svg:hover {
     fill: #E9E9E9;
+}
+
+@media(max-width: 650px) {
+    .dev-img {
+        width: 96px;
+        height: 96px;
+    }
+
+    .dev-name {
+        height: 23px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .dev-post{
+        height: 23px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+    }
 }
 </style>
