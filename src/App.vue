@@ -2,7 +2,7 @@
   <v-app>
     <v-main>
 
-      <div class="bg-color">
+      <div class="dev-page">
         <div class="post-title mx-auto">Frontend Developers</div>
 
         <v-row class="d-flex justify-space-around">
@@ -77,8 +77,9 @@ export default {
 
 
 
-.bg-color {
-  background-color: #171717;
+.dev-page {
+  background-color: #1E1F1E !important;
+  padding-bottom: 100px;
 }
 
 .post-title {
@@ -94,4 +95,16 @@ export default {
 
   color: #FFFFFF;
 }
+
+@media(max-width: 650px) {
+  .post-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 </style>
