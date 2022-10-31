@@ -7,7 +7,7 @@
                 {{ name }}
             </v-card-title>
 
-            <v-card-subtitle class="dev-post mx-auto my-2 px-0">
+            <v-card-subtitle class="dev-post mx-auto mt-2 px-0">
                 {{ post }}
             </v-card-subtitle>
 
